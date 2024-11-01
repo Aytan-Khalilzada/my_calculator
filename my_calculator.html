@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="my_cal_styles.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <!-- Display for expression and result -->
+        <div class="display">
+            <div class="expression" id="expression"></div>
+            <div class="equal_sign">=</div>
+            <div class="result" id="result">0</div>
+        </div>
+
+        <hr>
+
+        <!-- Buttons for calculator -->
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendCharacter('/')">/</button>
+            <button onclick="appendCharacter('%')">%</button>
+            <button onclick="appendCharacter('*')">x</button>
+
+            <button class="different" onclick="appendCharacter('7')">7</button>
+            <button class="different" onclick="appendCharacter('8')">8</button>
+            <button class="different" onclick="appendCharacter('9')">9</button>
+            <button onclick="toggleSign()">±</button>
+
+            <button class="different" onclick="appendCharacter('4')">4</button>
+            <button class="different" onclick="appendCharacter('5')">5</button>
+            <button class="different" onclick="appendCharacter('6')">6</button>
+            <button onclick="appendCharacter('-')">-</button>
+
+            <button class="different" onclick="appendCharacter('1')">1</button>
+            <button class="different" onclick="appendCharacter('2')">2</button>
+            <button class="different" onclick="appendCharacter('3')">3</button>
+            <button onclick="appendCharacter('+')">+</button>
+
+            <button class="different" onclick="appendDecimal()">.</button>
+            <button class="different" onclick="appendCharacter('0')">0</button>
+            <button onclick="deleteLast()">←</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="my_cal_scripts.js"></script>
+    
+</body>
+
+</html>

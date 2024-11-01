@@ -1,0 +1,91 @@
+ /* Basic styling */
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Calculator container */
+.calculator {
+    background: #323232;
+    padding: 20px;
+    box-shadow: -5px 5px 8px #0000004D;
+    width: 190px;
+    height: 350px;
+}
+
+/* Display area for the expression and result */
+.display {
+    display: grid;
+    padding: 10px;
+    height: 100px;
+    background-color: #323232;
+    text-align: right;
+}
+
+.expression {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.equal_sign {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 16px;
+    width: 20px;
+    padding-top: 6px;
+    color: #ffffff;
+}
+
+.result {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 5px;
+}
+
+hr {
+    width: 180px;
+    background-color: #74EBD5;
+    height: 0.5px;
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+/* Calculator buttons */
+button {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: #74EBD5;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: -3px 4px 18px #0000004D inset;
+}
+
+.different {
+    background-color: #ffffff;
+    color: #000000;
+}
